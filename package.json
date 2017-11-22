@@ -2,6 +2,7 @@
   "name": "reddit-clone-react",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://react-firebase-reddit.herokuapp.com/",
   "dependencies": {
     "firebase": "^4.6.2",
     "react": "^16.1.1",
