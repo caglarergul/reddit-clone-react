@@ -29,13 +29,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {this.props.children && React.cloneElement(this.props.children, {
-          firebaseRef: firebase
-            .database()
-            .ref('posts'),
-          posts: this.state.posts,
-          loading: this.state.loading
-        })}
+       {this.props.children && React.cloneElement(this.props.children, {
+firebase: firebase.database(),
+posts: this.state.posts,
+loading: this.state.loading
+})}
       </div>
     );
   }
