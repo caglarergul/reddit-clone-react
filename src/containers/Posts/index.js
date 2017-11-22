@@ -22,7 +22,7 @@ class Posts extends Component {
                               <h4 className="card-title"><div key={key}> {posts[key].title} </div></h4>
                              
                               <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              <a href="#" class="card-link">read more...</a>
+                              <a  className="card-link">read more...</a>
                             </div>
                           </div>
                         );

@@ -4,12 +4,8 @@ class AddPost extends Component {
   constructor() {
     super();
 
-    this.handleChange = this
-      .handleChange
-      .bind(this);
-    this.handleSubmit = this
-      .handleSubmit
-      .bind(this);
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   state = {
@@ -23,11 +19,9 @@ class AddPost extends Component {
   handleSubmit = (e) => {
     e.preventDefault();
 
-    this
-      .props
-      .firebase
-      .ref('posts')
-      .push({title: this.state.title, upvote: 0, downvote: 0});
+    this.props.firebaseRef.push({
+      title: this.state.title
+      });
 
     this.setState({title: ''});
   }
@@ -37,14 +31,14 @@ class AddPost extends Component {
       <div className="AddPost">
         <div className="container">
           <h1>Add a New Post</h1>
-          <div class="input-group">
+          <div className="input-group">
             <input
               className="form-control"
               type="text"
               placeholder="Write the title of your post"
               onChange={this.handleChange}
               value={this.state.title}/>
-            <span class="input-group-btn">
+            <span className="input-group-btn">
               <button className="btn btn-secondary" type="submit" onClick={this.handleSubmit}>
                 Add
               </button>
