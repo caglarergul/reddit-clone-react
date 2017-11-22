@@ -8,7 +8,10 @@ class App extends Component {
     // Initialize Firebase
     firebase.initializeApp(config);
   }
-
+  state = {
+    posts: [],
+    loading: true
+  };
   componentWillMount() {
     let postsRef = firebase
       .database()
