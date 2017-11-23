@@ -5,7 +5,7 @@ language: node_js
 
 node_js:
   # LTS version
-  - "8.0"
+  - "8.9.1"
 
 notifications:
   email:
@@ -24,3 +24,7 @@ install:
 before_script:
   - export CI=false
 
+deploy:
+  skip_cleanup: true
+  on:
+    branch: ["master"]
