@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/caglarergul/reddit-clone-react.svg?branch=master)](https://travis-ci.org/caglarergul/reddit-clone-react)
 ## Reddit Application Clone w/ React - Firebase - Bootstrap4
 
 This is a Reddit clone react based app.
