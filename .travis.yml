@@ -24,6 +24,11 @@ install:
 before_script:
   - export CI=false
 
+script:
+  - npm test #Runs Tests
+  - npm run build #Creats a production build
+
+
 deploy:
   provider: pages
   skip_cleanup: true
