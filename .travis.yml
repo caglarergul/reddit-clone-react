@@ -24,9 +24,3 @@ install:
 before_script:
   - export CI=false
 
-deploy:
-  skip_cleanup: true
-  provider: script
-  script: npm run publish:webapp
-  on:
-    branch: ["master"]
