@@ -8,7 +8,10 @@ http://localhost:3000/posts is listin all posts.
 http://localhost:3000/add-post is posting a new post.
 
 The application is used Firebase DB connection and Bootstrap 4 Css Framework.
+
 Here is a live demo on **heroku**: https://react-firebase-reddit.herokuapp.com/
+
+
 ## License
 
 The MIT License (MIT)
