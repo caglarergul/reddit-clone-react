@@ -8,12 +8,12 @@ http://localhost:3000/posts is listin all posts.
 http://localhost:3000/add-post is posting a new post.
 
 The application is used Firebase DB connection and Bootstrap 4 Css Framework.
-
+Here is a live demo on **heroku**: https://react-firebase-reddit.herokuapp.com/
 ## License
 
 The MIT License (MIT)
 
-Copyright (c) 2017 Çağlar ERGÜL
+Copyright (c) 2017 Caglar Ergul
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
