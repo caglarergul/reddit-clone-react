@@ -1,6 +1,7 @@
-language:  node_js
+language: node_js
 node_js:
-  -"src/index.js"
-  -"7"
-before_install:
-  - npm install
+  "7"
+install:
+    - npm install
+script:
+    - npm start
