@@ -1,7 +1,32 @@
+---
+sudo: required
+dist: trusty
 language: node_js
+
 node_js:
-  "7"
+  # LTS version
+  - "8.0"
+
+notifications:
+  email:
+    on_success: change # only if status change from fail to success
+    on_failure: always # if there is a fail
+    recipients:
+      - caglarergul@me.com
+
+cache:
+  directories:
+    - node_modules
+
 install:
-    - npm install
-script:
-    - npm start
+  - npm install
+
+before_script:
+  - export CI=false
+
+deploy:
+  skip_cleanup: true
+  provider: script
+  script: npm run publish:webapp
+  on:
+    branch: ["master"]
